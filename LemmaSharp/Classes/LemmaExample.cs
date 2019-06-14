@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 
-namespace LemmaSharp.Classes {
+namespace LemmaSharp {
 
     public class LemmaExample : IComparable<LemmaExample>, IComparer<LemmaExample> {
         

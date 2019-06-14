@@ -7,7 +7,7 @@ using SevenZip;
 using System.Diagnostics;
 using System.Collections.Concurrent;
 
-namespace LemmaSharp.Classes
+namespace LemmaSharp
 {
 
     [Serializable]

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace LemmaSharp.Classes
+namespace LemmaSharp
 {
     static class Constants
     {

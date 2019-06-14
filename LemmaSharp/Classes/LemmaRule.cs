@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace LemmaSharp.Classes {
+namespace LemmaSharp {
     public class LemmaRule {
 
         // Private Variables -----------------------

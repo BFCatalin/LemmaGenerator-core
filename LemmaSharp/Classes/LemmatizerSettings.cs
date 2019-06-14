@@ -2,7 +2,7 @@
 using System.IO;
 using System.Runtime.Serialization;
 
-namespace LemmaSharp.Classes {
+namespace LemmaSharp {
 
     /// <summary>
     /// These are the lemmagen algorithm settings that affect speed/power of the learning and lemmatizing algorithm.

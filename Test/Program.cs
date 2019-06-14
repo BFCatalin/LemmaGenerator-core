@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using LemmaSharp.Classes;
+using LemmaSharp;
 using Test.Classes;
 
 namespace Test

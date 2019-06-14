@@ -5,7 +5,7 @@ using System.IO;
 using System.Collections.Concurrent;
 using System.Linq;
 
-namespace LemmaSharp.Classes {
+namespace LemmaSharp {
 
     [Serializable]
     public class LemmaTreeNode : ILemmatizerModel {

@@ -2,7 +2,7 @@
 using System.IO;
 using System.Runtime.Serialization;
 using System.Reflection;
-using LemmaSharp.Classes;
+using LemmaSharp;
 
 namespace Test.Classes {
 

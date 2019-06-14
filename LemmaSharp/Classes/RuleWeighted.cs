@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LemmaSharp.Classes {
+namespace LemmaSharp {
 
     [Serializable]
     class RuleWeighted: IComparable<RuleWeighted>{

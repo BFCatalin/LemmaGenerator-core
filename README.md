@@ -1,10 +1,11 @@
-LemmaGenerator
+LemmaGenerator-core
 ==============
+This fork is for dotnet core compatibility.
 
 LemmaGenerator creates lemmatizers for several European languages that you can customize.
 
-This package is available on Nuget:
-> Install-Package LemmaGenerator
+TODO: This package is available on Nuget:
+
 
 This project was created by Matjaz Jursic and was retrieved on http://lemmatise.ijs.si/. He's the expert and did a great job so for all questions you should check his website.
 

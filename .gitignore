@@ -115,3 +115,7 @@ UpgradeLog*.XML
 # Output folders
 Output/
 Uncompressed/
+
+.idea/
+.code/
+.vscore/

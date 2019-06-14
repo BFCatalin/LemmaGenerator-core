@@ -1,4 +1,4 @@
-dotnet starndard LemmaGenerator
+dotnet standard LemmaGenerator
 ==============
 
 LemmaGenerator creates lemmatizers for several European languages that you can customize.

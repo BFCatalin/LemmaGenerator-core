@@ -1,17 +1,16 @@
-LemmaGenerator
+Dotnet standard LemmaGenerator
 ==============
 
 LemmaGenerator creates lemmatizers for several European languages that you can customize.
 
 This package is available on Nuget:
-> Install-Package LemmaGenerator
 
 This project was created by Matjaz Jursic and was retrieved on http://lemmatise.ijs.si/. He's the expert and did a great job so for all questions you should check his website.
 
 Quickstart
 ----------------
 
-If you just want to lemmatize words, you want to check the precompiled lemmatizer files here: https://github.com/AlexPoint/LemmaGenerator/tree/master/Test/Data.
+If you just want to lemmatize words, you want to check the precompiled lemmatizer files here: https://github.com/hc-ro/LemmaGenerator-std/tree/master/Test/Data.
 
 Load the selected file in a stream a build a lemmatizer with it:
 

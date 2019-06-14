@@ -543,24 +543,24 @@ namespace LemmaSharp.Classes
 #if LATINO
 
         public void Save(Latino.BinarySerializer binWrt) {
-            lsett.Save(binWrt);
+            Lsett.Save(binWrt);
             
-            elExamples.Save(binWrt, true, false);
+            ElExamples.Save(binWrt, true, false);
 
-            ltnRootNode.Save(binWrt);
-            if (lsett.bBuildFrontLemmatizer)
-                ltnRootNodeFront.Save(binWrt);
+            LtnRootNode.Save(binWrt);
+            if (Lsett.bBuildFrontLemmatizer)
+                LtnRootNodeFront.Save(binWrt);
         }
 
         public void Load(Latino.BinarySerializer binRead) {
-            lsett = new LemmatizerSettings(binRead);
-            elExamples = new ExampleList(binRead, lsett);
-            if (!lsett.bBuildFrontLemmatizer) {
-                ltnRootNode = new LemmaTreeNode(binRead, lsett, elExamples, null);
+            Lsett = new LemmatizerSettings(binRead);
+            ElExamples = new ExampleList(binRead, Lsett);
+            if (!Lsett.bBuildFrontLemmatizer) {
+                LtnRootNode = new LemmaTreeNode(binRead, Lsett, ElExamples, null);
             }
             else {
-                ltnRootNode = new LemmaTreeNode(binRead, lsett, elExamples.GetFrontRearExampleList(false) , null);
-                ltnRootNodeFront = new LemmaTreeNode(binRead, lsett, elExamples.GetFrontRearExampleList(true), null);
+                LtnRootNode = new LemmaTreeNode(binRead, Lsett, ElExamples.GetFrontRearExampleList(false) , null);
+                LtnRootNodeFront = new LemmaTreeNode(binRead, Lsett, ElExamples.GetFrontRearExampleList(true), null);
             }               
         }
 

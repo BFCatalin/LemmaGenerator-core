@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using LemmaSharp.Classes;
 using SourceFileBuilder.Classes;
 
@@ -15,14 +11,14 @@ namespace SourceFileBuilder
         static void Main(string[] args)
         {
 
-            var currentDirectory = Environment.CurrentDirectory + "/../../";
+            var currentDirectory = Environment.CurrentDirectory;
             var lemmatizerFilePath = currentDirectory + "../Test/Data/full7z-mlteast-en.lem";
 
             var fileName = Path.GetFileNameWithoutExtension(lemmatizerFilePath) + "-modified";
             var extension = Path.GetExtension(lemmatizerFilePath);
             var outputFilePath = string.Format("{0}Output/{1}{2}", currentDirectory, fileName, extension);
 
-            var enricherFilePaths = Directory.GetFiles(currentDirectory + "Input/");
+            var enricherFilePaths = Directory.GetFiles(Path.Combine(currentDirectory, "Input"));
 
 
             using (var stream = File.OpenRead(lemmatizerFilePath))

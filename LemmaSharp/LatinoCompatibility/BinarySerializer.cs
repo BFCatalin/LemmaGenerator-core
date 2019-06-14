@@ -27,7 +27,7 @@ using System.IO;
 
 #if LATINO
 
-namespace Latino
+namespace LemmaSharp.Latino
 {
     /* .-----------------------------------------------------------------------
        |

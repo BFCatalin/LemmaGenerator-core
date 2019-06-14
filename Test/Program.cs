@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using LemmaSharp.Classes;
 using Test.Classes;
 
@@ -18,7 +13,7 @@ namespace Test
         {
             // Create readable file
             var currentDirectory = Directory.GetCurrentDirectory();
-            var dataFilePath = string.Format("{0}/{1}/{2}", currentDirectory, "../../Data/Custom", "full7z-mlteast-en-modified.lem");
+            var dataFilePath = $"{currentDirectory}/Data/Custom/full7z-mlteast-en-modified.lem";
 
             using (var fstream = File.OpenRead(dataFilePath))
             {

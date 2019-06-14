@@ -39,7 +39,6 @@ namespace LemmaSharp.Classes {
                 case LemmatizerSettings.MsdConsideration.JoinSameSubstring:
                     sSignature = "[" + sWord + "]==>[" + sLemma + "]";
                     break;
-                case LemmatizerSettings.MsdConsideration.Distinct:
                 default:
                     sSignature = "[" + sWord + "]==>[" + sLemma + "](" + (sMsd ?? "") + ")";
                     break;

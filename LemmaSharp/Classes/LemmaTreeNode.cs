@@ -478,12 +478,12 @@ namespace LemmaSharp.Classes {
             this.lsett = lsett;
 
             if (binRead.ReadBool()) {
-                dictSubNodes = new Dictionary<char, LemmaTreeNode>();
+                dictSubNodes = new ConcurrentDictionary<char, LemmaTreeNode>();
                 int iCount = binRead.ReadInt();
                 for (int i = 0; i < iCount; i++) {
                     char cKey = binRead.ReadChar();
                     LemmaTreeNode ltrSub = new LemmaTreeNode(binRead, this.lsett, elExamples, this);
-                    dictSubNodes.Add(cKey, ltrSub);
+                    dictSubNodes.TryAdd(cKey, ltrSub);
                 }
             }
             else
